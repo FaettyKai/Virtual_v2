@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Glitch Goblin";
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.page1, .page2, .page3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page1 {
+    display: flex;
+    flex-direction: column;
+}
+.main-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.content-container {
+    display: grid; 
+    grid-template-columns: 200px 1fr 1fr;
+    align-items: center;
+}
+
+.main-content-container {
+    padding-left: 35rem;
+    position: absolute;
+    width: 50%;
+}
+
+.data-container {
+    position: absolute;
+    padding-left: 70rem;
+}
+
+.head {
+    font-size: 3rem;
+}
+
+.head-2 {
+    font-size: 5rem;
+}
+
+nav {
+    display: flex; 
+    gap: 5rem;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    margin-left: 0.3rem;
+}
+
+/* For Nav position: sticky */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+/* for nav items to slide on click */
+/* Class that pushes items off the view */
+.slide-left {
+    transform: translateX(-100%);
+
+}
+
+/* Transition effect for each item */
+.home, .news, .files {
+    transition: transform 0.3s;
+}
+
+.menu-icon {
+    width: 3rem;
+    height: 3rem;
+    transition: transform 0.5s ease-in-out; /* added for transition on click */
+}
+
+.menu-icon::before {
+    transform: translate(-50%, -50%) rotate(0); /* added for transition on click */
+}
+
+.menu-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg); /* added for transition on click */
+}
+
+.data {
+    width: 15rem;
+    height: 5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 8px 8px 5px lavender;
+    font-family: "Glitch Goblin"; 
+} 
+
+.sign-up, .candidate {
+    opacity: 0;
+
+  }
+
+.menu-icon:hover, .home:hover, .news:hover, .files:hover, .data:hover {
+    cursor: pointer;
+  }
+
+  /* Add insta log and make it interactive */
+
+.insta img {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0.3rem;
+}
+
+.insta:hover {
+    cursor: pointer;
+}
