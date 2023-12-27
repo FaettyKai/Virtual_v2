@@ -115,13 +115,42 @@ nav {
   }
 
   /* Add insta log and make it interactive */
+  /* Add youtube 12/19/23 */
 
 .insta img {
     height: 2rem;
     width: 2rem;
-    margin-left: 0.3rem;
+    margin-left: 0.5rem;
 }
 
 .insta:hover {
     cursor: pointer;
 }
+
+.youtube img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.youtube:hover {
+    cursor: pointer; 
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+/* Add background art and container for news */
+.news-container {
+    height: 52rem;
+    width: 90rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    background-image: url(./img/1-with-cute-doggy.png);
+    background-size: 100rem 52rem;
+}
+

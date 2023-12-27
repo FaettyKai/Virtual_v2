@@ -169,3 +169,24 @@ function stickyNav() {
     navbar.classList.remove("sticky");
   }
 }
+
+// Link instagram 12/19/23 
+
+const instagram = document.querySelector(".insta img");
+
+function openInNewTab(url) {
+    const win = window.open(url, "_blank");
+    win.focus();
+}
+
+instagram.addEventListener("click", function(event) {
+    openInNewTab("https://www.instagram.com/outerheavenvirtual/?next=%2F");
+});
+
+// Link youtube 12/26/23
+
+const youtube = document.querySelector(".youtube img");
+
+youtube.addEventListener("click", function(event) {
+    openInNewTab("https://www.youtube.com/@outerheavenvirtual");
+});
