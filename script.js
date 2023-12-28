@@ -12,6 +12,9 @@ files = document.querySelector(".files")
 //Add aria-label to help set context for user.
 
 // Updated to take the span including the buttons context. Context now pulsates; not the button.
+
+// 12/26/23 **This block of code is no longer needed**
+/*
 button.addEventListener("click", () => {
     buttonSpan.textContent = ".";
     let counter = 0;
@@ -45,7 +48,10 @@ button.addEventListener("click", () => {
  
  home.addEventListener("click", () => {
  })
- 
+ */
+// end of code not needed 12/26/23
+
+
 // Inline Javascript added to for-candidate & sign to open google forms
 // <button onclick = "window.location = 'https://forms.gle/vUfZau3JRmA1Y9pi6';" 
 // class = "for-candidate"> inline to open on same tab

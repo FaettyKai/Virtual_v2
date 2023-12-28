@@ -29,27 +29,39 @@
 
 .content-container {
     display: grid; 
-    grid-template-columns: 200px 1fr 1fr;
-    align-items: center;
+    grid-template-columns: 200px 1fr;
 }
 
 .main-content-container {
-    padding-left: 35rem;
+    margin-left: 30rem;
     position: absolute;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    /*
+    width: 60%;
+    background-image: url("./img/1-with-cute-doggy.png");
+    background-size: cover;
+    background-position: center;
+    height: 73%;
+    display: flex; 
+    justify-content: center;
+    padding-top: 0.5rem;
+    box-shadow: 8px 8px 5px lavender;
+    */
 }
 
-.data-container {
-    position: absolute;
-    padding-left: 70rem;
+.welcome {
+    color: white;
 }
 
 .head {
     font-size: 3rem;
+    color: white;
 }
 
 .head-2 {
     font-size: 5rem;
+    color: white;
 }
 
 nav {
@@ -65,7 +77,7 @@ nav {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 5%;
   }
 
 /* for nav items to slide on click */
@@ -105,13 +117,12 @@ nav {
     font-family: "Glitch Goblin"; 
 } 
 
-.sign-up, .candidate {
-    opacity: 0;
-
-  }
-
 .menu-icon:hover, .home:hover, .news:hover, .files:hover, .data:hover {
     cursor: pointer;
+    font-size: 2rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    
   }
 
   /* Add insta log and make it interactive */
@@ -143,6 +154,8 @@ nav {
 }
 
 /* Add background art and container for news */
+
+/* no longer needed 12/26/23 
 .news-container {
     height: 52rem;
     width: 90rem;
@@ -153,4 +166,39 @@ nav {
     background-image: url(./img/1-with-cute-doggy.png);
     background-size: 100rem 52rem;
 }
+*/
 
+.portrait img {
+    height: 30rem;
+    width: 24rem;
+}
+
+.page1 {
+    background-image: url("./img/1-with-cute-doggy.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* 12/28/23 Background image done. Change font to white 
+Finalize New section
+Hover Candidate & sign-up */
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.new-news {
+    font-size: 3rem;
+}
+
+.candidate, .sign-up {
+    font-size: 1.5rem;
+}
+
+.for-candidate:hover, .sign:hover {
+    cursor: pointer;
+    color: blue;
+}
