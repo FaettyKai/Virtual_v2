@@ -90,6 +90,7 @@ nav {
 /* Transition effect for each item */
 .home, .news, .files {
     transition: transform 0.3s;
+    color: rgb(133, 87, 133);
 }
 
 .menu-icon {
