@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.body {
+    font-size: 16px;
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -22,6 +26,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .main-container {
     width: 100%;
     height: 100vh;
@@ -29,11 +34,12 @@
 
 .content-container {
     display: grid; 
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 12.5rem 1fr;
 }
 
 .main-content-container {
-    margin-left: 30rem;
+    /*margin-left: 30rem; */
+    align-content: flex-end;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -69,7 +75,7 @@ nav {
     gap: 5rem;
     flex-direction: column;
     font-size: 1.5rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
     margin-left: 0.3rem;
 }
 
@@ -83,8 +89,7 @@ nav {
 /* for nav items to slide on click */
 /* Class that pushes items off the view */
 .slide-left {
-    transform: translateX(-100%);
-
+    transform: translateX(-400%);   /*1/29/24 Switched from -100 to -400 to accommodate mobile */
 }
 
 /* Transition effect for each item */
@@ -168,17 +173,20 @@ nav {
     background-size: 100rem 52rem;
 }
 */
-
-.portrait img {
-    height: 30rem;
-    width: 24rem;
+.portrait {
+    height: 75%;  /* 1/29/24 changed for mobile accommodation. % of news container */
+    width: 75%;
+}
+.portrait img { 
+    height: 75%;    /* 1/29/24 changed for mobile accommodation. % of news container */
+    width: 75%;
 }
 
 .page1 {
-    background-image: url("./img/1-with-cute-doggy.png");
+    background-image: url("./img/1-with-cute-doggy.png"); /*1-with-cute-doggy.png */
     background-size: cover;
     background-position: bottom;
-}
+} 
 
 /* 12/28/23 Background image done. Change font to white 
 Finalize New section
@@ -188,18 +196,46 @@ Hover Candidate & sign-up */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    width: 75%;   /* 1/29/24 temp fix for mobile view */
+}
+
+.news-text {
+    width: 50%;       /* 1/29/24 changed to accommodate mobile. % of news container */
 }
 
 .new-news {
-    font-size: 3rem;
+    width: 75%;          /* 1/29/24 changed to accommodate mobile. % of news container */
+    font-size: 3vh;
 }
 
 .candidate, .sign-up {
-    font-size: 1.5rem;
+    width: 75%;             /* 1/29/24 changed to accommodate mobile. % of news container */
+    font-size: 1.5vh;
 }
 
 .for-candidate:hover, .sign:hover {
     cursor: pointer;
     color: blue;
+}
+
+/* 1/29/24 Chibi added */
+
+.suspicious img {
+    height: 20%;
+    width: 20%;
+    cursor: pointer;
+}
+
+.suspicious {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1.5rem;
+}
+
+.placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
