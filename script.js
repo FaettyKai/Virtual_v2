@@ -3,9 +3,9 @@ button = document.querySelector(".data");
 buttonSpan = document.querySelector("#button-text");
 candidate = document.querySelector(".candidate");
 signUp = document.querySelector(".sign-up");
-home = document.querySelector(".home")
-news = document.querySelector(".news")
-files = document.querySelector(".files")
+home = document.querySelector(".home");
+news = document.querySelector(".news");
+files = document.querySelector(".files");
 
 
 // COMMENT: This code makes the button pulse for about 5 seconds (alternating opacity every second) after it's clicked.
