@@ -112,6 +112,8 @@ nav {
     font-size: 1.5rem;
     padding-top: 5rem;
     margin-left: 0.3rem;
+    /* 4/22/2024: fixed issue where background video messed with the transform function of the nav bar */
+    z-index: 1;
 }
 
 /* For Nav position: sticky */
@@ -208,9 +210,12 @@ nav {
     background-size: 100rem 52rem;
 }
 */
+
+/* 4/26/2024: No longer applicable??? */
 .portrait {
     height: 75%;  /* 1/29/24 changed for mobile accommodation. % of news container */
-    width: 75%;
+    width: 40%;
+    margin-top: 12rem;
 }
 .portrait img { 
     height: 75%;    /* 1/29/24 changed for mobile accommodation. % of news container */
@@ -239,24 +244,32 @@ nav {
 Finalize New section
 Hover Candidate & sign-up */
 
+/* 
+
+04/22/2024:
+Commented out for new page 2 slide/carousel format
+
+
 .news-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;   /* 1/29/24 temp fix for mobile view */
+    width: 75%;   comment 1/29/24 temp fix for mobile view comment
+    margin-left: 10rem; comment 4/22/2024 comment
+    height: 100%;   comment 4/22/2024: height to match pg.2 comment
 }
 
 .news-text {
-    width: 50%;       /* 1/29/24 changed to accommodate mobile. % of news container */
+    width: 50%;       comment 1/29/24 changed to accommodate mobile. % of news container comment comment CHANGED TODAY 50% comment
 }
 
 .new-news {
-    width: 75%;          /* 1/29/24 changed to accommodate mobile. % of news container */
+    width: 75%;          comment 1/29/24 changed to accommodate mobile. % of news container comment
     font-size: 3vh;
 }
 
 .candidate, .sign-up {
-    width: 75%;             /* 1/29/24 changed to accommodate mobile. % of news container */
+    width: 75%;             comment 1/29/24 changed to accommodate mobile. % of news container comment
     font-size: 1.5vh;
 }
 
@@ -264,6 +277,11 @@ Hover Candidate & sign-up */
     cursor: pointer;
     color: blue;
 }
+
+
+-END OF LARGE CHANGE 04/22/2024-
+*/
+
 
 /* 1/29/24 Chibi added */
 
@@ -286,3 +304,117 @@ Hover Candidate & sign-up */
     justify-content: center;
     align-items: center;
 }
+
+
+/* 04/22/2024: Commented out for new page 2 slide/carousel format */
+
+/* 04/22/2024: Added iframe for new application method 
+iframe {
+    height: 30rem;
+    width: 100%;
+}
+*/
+
+
+
+/* 04/22/2024: CSS for newly formatted page 2 Slide/carousel */
+
+/* 04/26/2024: Edited CSS to resize the content of mySlides. */
+.slideshow-container {
+    max-width: 20rem;
+    max-height: 45rem;
+    width: 30rem;
+    height: 45rem;
+    position: relative;
+    margin: auto;
+}
+
+/* hide images by default */
+.mySlides {
+    display: none;
+}
+
+/*next and previous buttons*/
+.prev, .next {
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a slightly translucent black background */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: rgb(133, 87, 133);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(46, 45, 45);
+    border-radius: 8px;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4};
+    to {opacity: 1};
+  }
+
+  /* END OF CHANGES. Sizing of iframes (Application forms CSS had to be done inline HTML) 
+  note: max-width does not change inside elements sizing*/
+
+
+  /* 04/26/2024: Quick fix to place page 3 where it needs to be. */
+  .page3 {
+    margin-top: 55rem;
+  }
